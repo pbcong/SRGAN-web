@@ -18,7 +18,6 @@ IMG_CHANNELS = 3
 
 test_transform = A.Compose(
     [
-        A.RandomCrop(width=LOW_RES, height=LOW_RES),
         A.Normalize(mean=[0, 0, 0], std=[1, 1, 1]),
         ToTensorV2(),
     ]
